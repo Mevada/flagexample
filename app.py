@@ -15,7 +15,7 @@ def action():
 
     flag[senderID] = True
     
-    return render_template('main.html',senderID = senderID,message=message,flag=flag)
+    return render_template('index.html',senderID = senderID,message=message,flag=flag)
 
 @app.route('/check/<string:senderID>',methods=['GET'])
 def check(senderID):
